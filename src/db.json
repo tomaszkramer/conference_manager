@@ -1,0 +1,23 @@
+{
+    "conferences": [
+        {
+            "name": "medical",
+            "panels":[
+                {
+                        "id": 1,
+                        "title": "Medycyna Alternatywna",
+                        "lecturer_title": "prof",
+                        "lecturer_name": "Jan",
+                        "lecturer_lastname": "Kowalski",
+                        "lecturer_company": "Stanfford University",
+                        "avalible_participants" : 50,
+                        "panel_number": 1,
+                        "panel_descrtiption": "Przedtstawienie najnowszych trendów w profilaktyce zdrowotnej",
+                        "subject": "Profilaktyka zdrowotna"
+
+                    }
+            ]
+        }
+    ]
+}
+

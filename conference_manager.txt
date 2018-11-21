@@ -1,0 +1,27 @@
+1. Rejestracja uczetników na poszczególne moduły
+a) Uczestnicy powinni otrzymać potwierdzenie rejestracji
+b) Formularz:
+- Imię
+- Nazwisko
+- Nazwa firmy
+- NIP
+- Adres
+- Telefon
+- Mail
+- Moduł - [tablica]?
+
+sprawdzić czy nie ma takich samych maili
+
+2. Newsletter
+
+3. Możliwość wykreowania indenyfikatorów
+
+4. Możliwość wykreowania certyfikatów
+
+
+name
+lastname
+company
+nip
+street
+streetnumber
