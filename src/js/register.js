@@ -30,7 +30,22 @@ class RegisterForm extends React.Component {
         })
     };
 
-    sendData = event =>{
+    sendData = () =>{
+
+        const myUrl = "http://licalhost:3000";
+
+        const participants ={
+            name: this.state.name,
+            lastname: this.state.lastname,
+            company: this.state.company,
+            nip: this.state.nip,
+            street: this.state.street,
+            streetNumber: this.state.streetNumber,
+            postcode: this.state.postcode,
+            city: this.state.city,
+            email: this.state.email,
+            tel: this.state.tel,
+        }
 
 
     }

@@ -1,19 +1,74 @@
 {
-  "posts": [
+  "conferences": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "conferences",
+      "panels": [
+        {
+          "id": 1,
+          "lecturer_id": 1,
+          "participants": 50,
+          "number": 1,
+          "descrtiption": "Presentation of the newest trends in preventive healthcare",
+          "subject": "Preventive healthcare"
+        },
+        {
+          "id": 2,
+          "lecturer_id": 2,
+          "participants": 20,
+          "number": 2,
+          "description": "Modern approach for homeopathy",
+          "subject": "Modern homeopathy"
+        },
+        {
+          "id": 3,
+          "lecturer_id": 3,
+          "participants": 10,
+          "number": 3,
+          "description": "Nowe trendy w chirurgii ręki",
+          "subject": "Chirurgia ręki"
+        },
+        {
+          "id": 4,
+          "lecturer_id": 4,
+          "participants": 15,
+          "number": 4,
+          "description": "Najnowsze badania wplywu szczepionek na organizm ludzki",
+          "subject": "czy szczepionki szkodzą?"
+        }
+      ]
     }
   ],
-  "comments": [
+
+  "lecturers": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "prof",
+      "name": "John",
+      "lastname": "Wick",
+      "company": "Stanford University"
+    },
+    {
+      "id": 2,
+      "title": "dr",
+      "name": "Steven",
+      "lastname": "Tyler",
+      "company": "Pfizer"
+    },
+    {
+      "id": 3,
+      "title": "prof",
+      "name": "Krzysztof",
+      "lastname": "Woliński",
+      "company": "Uniwersytet Medyczny Warszawa"
+    },
+    {
+      "id": 4,
+      "title": "dr",
+      "name": "Maria",
+      "lastname": "Zdanowska",
+      "company": "Uniwersytet Łódzki"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
+
