@@ -63,13 +63,14 @@ class Conferency extends React.Component{
 
                 <div>
                     {this.props.conferency.panels.map(el=> {
-                        const panelLecturer = this.props.lecturers ? this.props.lecturers.find((lecture) => lecture.id === el.lecturer_id) : null;
+                        const panelLecturer = this.props.lecturers ? this.props.lecturers.find((lecture) => lecture.id === el.lecturer_id) : {};
                         console.log(panelLecturer)
                         return <div>
                             <div>
                                 <h1>{el.subject}</h1>
-                                <h2>Prelegent: {panelLecturer.title}{' '}{panelLecturer.name}{' '}{panelLecturer.lastname}</h2>
-                                <p></p>
+                                <h2>{panelLecturer.title}{' '}{panelLecturer.name}{' '}{panelLecturer.lastname}</h2>
+                                <h3>{panelLecturer.company}</h3>
+                                <p>{el.description}</p>
 
                             </div>
 
