@@ -9,8 +9,9 @@
           "lecturer_id": 1,
           "participants": 50,
           "number": 1,
-          "descrtiption": "Presentation of the newest trends in preventive healthcare",
-          "subject": "Preventive healthcare"
+          "description": "Presentation of the newest trends in preventive healthcare",
+          "subject": "Preventive healthcare",
+          "actualParticipants": []
         },
         {
           "id": 2,
@@ -18,7 +19,8 @@
           "participants": 20,
           "number": 2,
           "description": "Modern approach for homeopathy",
-          "subject": "Modern homeopathy"
+          "subject": "Modern homeopathy",
+          "actualParticipants": []
         },
         {
           "id": 3,
@@ -26,7 +28,8 @@
           "participants": 10,
           "number": 3,
           "description": "Nowe trendy w chirurgii ręki",
-          "subject": "Chirurgia ręki"
+          "subject": "Chirurgia ręki",
+          "actualParticipants": []
         },
         {
           "id": 4,
@@ -34,12 +37,12 @@
           "participants": 15,
           "number": 4,
           "description": "Najnowsze badania wplywu szczepionek na organizm ludzki",
-          "subject": "czy szczepionki szkodzą?"
+          "subject": "czy szczepionki szkodzą?",
+          "actualParticipants": []
         }
       ]
     }
   ],
-
   "lecturers": [
     {
       "id": 1,
@@ -69,6 +72,19 @@
       "lastname": "Zdanowska",
       "company": "Uniwersytet Łódzki"
     }
+  ],
+  "participants": [
+    {
+      "id": "1",
+      "name": "ad",
+      "lastname": "asd",
+      "email": "as@ww.ll"
+    },
+    {
+      "id": "2",
+      "name": "",
+      "lastname": "",
+      "email": ""
+    }
   ]
 }
-
