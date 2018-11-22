@@ -10,16 +10,10 @@ class RegisterForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: '',
-            lastname: '',
-            company: '',
-            nip: '',
-            street: '',
-            streetNumber: '',
-            postcode: '',
-            city: '',
-            email: '',
-            tel: '',
+            participants:[
+                {id:'', name: '', lastname:'', company: '', nip:'', street:'',
+                streetNumber:'', postcode:'', city:'', email:'', tel:''},
+            ],
             wronganswear: [],
         }
     }
@@ -30,72 +24,52 @@ class RegisterForm extends React.Component {
         })
     };
 
-    sendData = () =>{
-
-        const myUrl = "http://licalhost:3000";
-
-        const participants ={
-            name: this.state.name,
-            lastname: this.state.lastname,
-            company: this.state.company,
-            nip: this.state.nip,
-            street: this.state.street,
-            streetNumber: this.state.streetNumber,
-            postcode: this.state.postcode,
-            city: this.state.city,
-            email: this.state.email,
-            tel: this.state.tel,
-        }
-
-
-    }
-
     handleFormValidation = (element) => {
         element.preventDefault();
         const myArr = [];
 
-        if (this.state.name === '') {
+        if (this.state.participants.name === '') {
 
             myArr.push('Pole imię musi być uzupełnione')
 
-        } else if (this.state.lastname === '') {
+        } else if (this.state.participants.lastname === '') {
 
             myArr.push('Pole nazwisko musi być uzupełnione')
 
-        } else if (this.state.company === ''){
+        } else if (this.state.participants.company === ''){
 
             myArr.push('Pole firma musi być uzupełnione')
 
-        } else if(this.state.nip ===''){
+        } else if(this.state.participants.nip ===''){
 
             myArr.push('Pole NIP musi być uzupełnione')
 
-        }else if(this.state.street ===''){
+        }else if(this.state.participants.street ===''){
             myArr.push('Pole ulica musi być wypełnione')
 
-        }else if(this.state.streetNumber === ''){
+        }else if(this.state.participants.streetNumber === ''){
 
             myArr.push('Pole numer musi być wypełnione')
 
-        }else if(this.state.postcode === ''){
+        }else if(this.state.participants.postcode === ''){
 
             myArr.push('Pole kod pocztowy musi być wypełnione')
 
-        }else if (this.state.city ===''){
+        }else if (this.state.participants.city ===''){
             myArr.push('Pole miasto musi być wypełnione')
 
-        } else if (this.state.email === '' || this.state.email.indexOf('@') === -1) {
+        } else if (this.state.participants.email === '' || this.state.participants.email.indexOf('@') === -1) {
 
             myArr.push('Pole e-mail musi być uzupełnione i zawierać znak @')
 
-        } else if (this.state.tel === '') {
+        } else if (this.state.participants.tel === '') {
 
             myArr.push('Pole departament musi być uzupełnione')
 
         } else {
 
             myArr.push('Formularz wypełniony poprawnie');
-        //    sendFormToDatabase
+        //    sendData
 
         }
 
@@ -104,6 +78,17 @@ class RegisterForm extends React.Component {
         })
 
     };
+
+    onSubmit=(el)=> {
+        let participants = []
+        if (el.id) {
+            participants = this.state.participants.filter(e => {
+                return e.id !== el.id
+            })
+        } else {
+            participants.id = participants + 1
+        }
+    }
 
     render() {
         return (

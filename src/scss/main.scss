@@ -1,11 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
 //font-family: 'Allerta Stencil', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Acme');
+//font-family: Acme, sans-serif
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body{
   margin: 0;
   padding: 0;
 }
 
+.component__title{
+  font-family: Allerta Stencil, sans-serif;
+}
+
+.lecturer{
+  font-family: Acme, sans-serif;
+}
+
+.main__div{
+  background: url('../images/event-1597531_1920.jpg');
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
 .poster__picture{
   width: 100vw;
   height: 100vh;
@@ -34,4 +57,40 @@ body{
 
 .street__nr{
   width: 30px;
+}
+
+.width__100{
+  width: 100%;
+}
+
+.width__40{
+  width: 40%;
+}
+
+.height__80{
+  min-height: 80%;
+}
+
+.custom__class{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.regFormBackground{
+  background: url("../images/microphone-704255_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 220px;
+}
+
+.section__bgGround{
+  background: url("../images/abstract-3291293.jpg");
+}
+
+@media (max-width: 768px) {
+  .custom__class{
+    display: block;
+    width: 100%;
+  }
 }
