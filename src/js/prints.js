@@ -19,6 +19,8 @@ export default class PrintDoc extends React.Component{
         }
     }
 
+
+
     printDocument =()=>{
         const name = this.state.name
         const lastname = this.state.lastname
