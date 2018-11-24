@@ -33,7 +33,7 @@ export default class RegisterParticipants extends React.Component{
         element.preventDefault()
         const myArr = []
         if (this.state.name === '') {
-            myArr.push('Pole imię musi nie moze być puste')
+            myArr.push('Pole imię nie może być puste')
         } else if (this.state.lastname === '') {
             myArr.push('Pole nazwisko nie może być puste')
         } else if (this.state.email === '') {
